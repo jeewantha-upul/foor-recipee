@@ -60,7 +60,7 @@ function App() {
       {/* rendering recipes */}
       <div className="app__recipes">
         {recipes.map((recipe) => (
-          <RecipeTile recipe={recipe} />
+          <RecipeTile key={recipe["recipe"]["calories"]} recipe={recipe} />
         ))}
       </div>
     </div>
